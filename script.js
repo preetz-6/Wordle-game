@@ -80,3 +80,19 @@ function checkGuess() {
 
 buildBoard();
 buildKeyboard();
+
+buildBoard();
+buildKeyboard();
+
+// 👇 Add this block to the end
+document.addEventListener("keydown", function (event) {
+  const key = event.key.toUpperCase();
+  
+  if (key === "ENTER") {
+    keyPressed("ENTER");
+  } else if (key === "BACKSPACE") {
+    keyPressed("DEL");
+  } else if (/^[A-Z]$/.test(key)) {
+    keyPressed(key);
+  }
+});
