@@ -1,0 +1,42 @@
+body {
+  background: black;
+  color: white;
+  font-family: Arial;
+  text-align: center;
+  margin-top: 20px;
+}
+
+#board {
+  display: grid;
+  grid-template-columns: repeat(5, 60px);
+  grid-gap: 5px;
+  justify-content: center;
+  margin: 20px auto;
+}
+
+.tile {
+  width: 60px;
+  height: 60px;
+  border: 2px solid gray;
+  font-size: 32px;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #222;
+}
+
+#keyboard {
+  margin-top: 20px;
+}
+
+.key {
+  margin: 5px;
+  padding: 10px 15px;
+  background-color: gray;
+  color: white;
+  border: none;
+  font-size: 16px;
+  border-radius: 4px;
+  cursor: pointer;
+}
